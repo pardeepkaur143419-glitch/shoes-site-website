@@ -1,0 +1,412 @@
+Style.css 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    color: #171717;
+}
+
+/* Navbar */
+header {
+    background: #111;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #ff7b32;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #ff7b32;
+}
+
+.nav-icons button {
+    background: #ff7b32;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    margin-left: 7px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu-btn {
+    display: none;
+}
+
+/* Hero */
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    color: white;
+    background:
+    linear-gradient(90deg, rgba(0,0,0,.85), rgba(0,0,0,.2)),
+    url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1600')
+    center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.tagline {
+    color: #ff7b32;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 65px;
+    margin: 20px 0;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: #ff7b32;
+}
+
+.hero p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.main-btn {
+    display: inline-block;
+    background: #ff7b32;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.main-btn:hover {
+    background: #e65d19;
+    transform: translateY(-3px);
+}
+
+/* Categories */
+.categories, .shop {
+    text-align: center;
+    padding: 65px 7%;
+}
+
+.categories h2, .shop h2,
+.about h2, .contact h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.category-buttons button {
+    padding: 12px 24px;
+    margin: 7px;
+    border: 1px solid #ff7b32;
+    background: white;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: .3s;
+}
+
+.category-buttons button:hover {
+    background: #ff7b32;
+    color: white;
+}
+
+/* Search */
+.search-section {
+    text-align: center;
+}
+
+.search-section input {
+    width: 80%;
+    max-width: 500px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+}
+
+/* Products */
+.subtitle {
+    color: #777;
+    margin-bottom: 35px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: #f7f7f7;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .3s;
+    text-align: left;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #0002;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 18px;
+}
+
+.product-info h3 {
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #ff7028;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.product-info button {
+    width: 100%;
+    background: #171717;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-info button:hover {
+    background: #ff7b32;
+}
+
+/* Offer */
+.offer {
+    margin: 40px 7%;
+    padding: 70px;
+    border-radius: 15px;
+    color: white;
+    background: linear-gradient(120deg, #151515, #633018);
+}
+
+.offer h2 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+/* About */
+.about {
+    text-align: center;
+    padding: 70px 15%;
+    background: #f5f5f5;
+}
+
+.about p {
+    line-height: 2;
+    color: #555;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input, .contact textarea,
+.modal-box input {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+.contact button, .modal-box > button:not(.close) {
+    padding: 14px;
+    background: #ff7b32;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    inset: 0;
+    background: #000b;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.modal-box {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-box h2 {
+    text-align: center;
+}
+
+.modal-box p {
+    text-align: center;
+}
+
+.modal-box a {
+    color: #ff7b32;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.cart-box {
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item button {
+    border: none;
+    color: red;
+    background: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 35px;
+    line-height: 2;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 650px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: inline-block;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .offer {
+        padding: 35px 20px;
+    }
+
+    .offer h2 {
+        font-size: 30px;
+    }
+
+    .about {
+        padding: 50px 8%;
+    }
+}
